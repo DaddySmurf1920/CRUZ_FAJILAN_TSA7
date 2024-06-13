@@ -64,30 +64,38 @@ body {
     margin: 0;
 }
 
-section {
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding: 4em 2em;
     background-color: #111;
     margin-bottom: 1em;
 }
 
-section:nth-of-type(even) {
+.content-section:nth-of-type(even) {
     background-color: #1a1a1a;
 }
 
-section h2 {
+.text-block, .image-block {
+    flex: 1;
+    padding: 1em;
+}
+
+.text-block h2 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
-section p, section ul {
+.text-block p, .text-block ul {
     font-size: 1.2em;
     line-height: 1.6;
 }
 
-section img {
+.image-block img {
     width: 100%;
     height: auto;
-    margin-top: 1em;
     border-radius: 8px;
 }
 
