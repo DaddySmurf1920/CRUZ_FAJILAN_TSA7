@@ -44,7 +44,6 @@ body {
     position: relative;
     text-align: center;
     color: #fde400;
-    margin-top: 2em; /* Adjusted margin to provide space */
 }
 
 .hero-section img {
@@ -67,23 +66,9 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1em;
     padding: 2em;
-    margin-top: 2em; /* Added margin for spacing */
-}
-
-.grid-container .grid-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-.grid-container .grid-row:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    margin-top: 2em; /* Added margin for spacing */
 }
 
 .content-section {
@@ -157,14 +142,6 @@ footer {
 
     .hero-text p {
         font-size: 1.2em;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .grid-container .grid-row:nth-child(2) {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 
