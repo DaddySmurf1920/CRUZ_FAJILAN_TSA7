@@ -2,6 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Default background color */
+    color: #333; /* Default text color */
+}
+
+/* Allow background and text colors to be easily changed */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .navbar {
@@ -9,12 +22,11 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 1em;
+    padding: 0.5em 1em;
 }
 
-.logo {
-    color: white;
-    font-size: 1.5em;
+.logo img {
+    height: 50px; /* Small logo */
 }
 
 .nav-links {
@@ -81,6 +93,12 @@ section img {
     width: 100%;
     height: auto;
     margin-top: 1em;
+}
+
+/* Responsive image sizes */
+section img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Breakpoint for tablets */
