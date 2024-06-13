@@ -2,14 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Default background color */
-    color: #333; /* Default text color */
+    background-color: #f4f4f4; 
+    color: #333; 
 }
 
-/* Allow background and text colors to be easily changed */
 :root {
-    --background-color: #f4f4f4;
-    --text-color: #333;
+    --background-color: #000000;
+    --text-color: #fde400;
 }
 
 body {
@@ -26,7 +25,7 @@ body {
 }
 
 .logo img {
-    height: 50px; /* Small logo */
+    height: 50px; 
 }
 
 .nav-links {
@@ -41,7 +40,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: #fde400;
     text-decoration: none;
     padding: 0.5em;
 }
@@ -54,7 +53,7 @@ body {
 .hero-section {
     position: relative;
     text-align: center;
-    color: white;
+    color: #fde400;
 }
 
 .hero-section img {
@@ -95,13 +94,11 @@ section img {
     margin-top: 1em;
 }
 
-/* Responsive image sizes */
 section img {
     max-width: 100%;
     height: auto;
 }
 
-/* Breakpoint for tablets */
 @media (max-width: 768px) {
     .hero-text h1 {
         font-size: 2.5em;
@@ -121,7 +118,6 @@ section img {
     }
 }
 
-/* Breakpoint for mobile phones */
 @media (max-width: 480px) {
     .hero-text h1 {
         font-size: 2em;
