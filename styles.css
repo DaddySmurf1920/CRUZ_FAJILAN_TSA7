@@ -64,8 +64,8 @@ body {
     margin: 0;
 }
 
-.hero-text p {
-    font-size: 1.5em;
+main {
+    padding: 2em;
 }
 
 .content-section {
@@ -73,9 +73,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 4em 2em;
     background-color: #111;
     margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .content-section:nth-of-type(even) {
@@ -83,7 +85,7 @@ body {
 }
 
 .text-block, .image-block {
-    flex: 1;
+    flex: 1 1 calc(50% - 2em);
     padding: 1em;
 }
 
@@ -105,6 +107,11 @@ body {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-block img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -178,11 +185,4 @@ footer {
         font-size: 1.5em;
     }
 
-    .text-block p, .text-block ul {
-        font-size: 0.8em;
-    }
-
-    .content-section {
-        padding: 1em 0.5em;
-    }
-}
+    .text-block p, .
